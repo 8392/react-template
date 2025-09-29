@@ -1,9 +1,9 @@
-import { useRoutes } from 'react-router'
+import { Navigate, useRoutes } from 'react-router'
 import Layout from '@/layout'
 import { Component } from '@/utils'
 
 const routeConfig = [
-  // { path: '/', element: <Redirect to="/home" /> },
+  { path: '/', element: <Navigate to="/home" /> },
   {
     path: 'home',
     element: Component('view/home'),

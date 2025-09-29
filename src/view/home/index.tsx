@@ -1,9 +1,14 @@
-import { useMemo, useState } from 'react'
+import * as react from 'react'
+import * as reactRouter from 'react-router'
 import Father from './fatherChild/Father'
 import { message } from './widget/Message'
 import Test1 from './widget/Test1'
 import TestFor from './widget/TestFor'
 import TestSlot from './widget/TestSlot'
+
+const { useState } = react
+window.reactRouter = reactRouter
+window.react = react
 
 function Home() {
   const [count, setCount] = useState(0)

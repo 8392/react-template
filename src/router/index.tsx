@@ -15,6 +15,10 @@ const routeConfig = [
       { path: 'aboutDetail', element: Component('view/about/detail') },
     ],
   },
+  {
+    path: 'requestIdleCallback',
+    element: Component('view/requestIdleCallback'),
+  },
 ]
 
 export default () => {

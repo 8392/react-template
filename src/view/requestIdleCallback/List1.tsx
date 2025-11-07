@@ -12,7 +12,6 @@ export default function IdleList() {
 
   function renderBatch(deadline: IdleDeadline) {
     const nextItems: string[] = [];
-
     while (
       deadline.timeRemaining() > 0 &&
       currentIndex.current < allItems.current.length

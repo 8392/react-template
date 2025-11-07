@@ -1,5 +1,9 @@
 import * as react from 'react'
 import * as reactRouter from 'react-router'
+import CountTest1 from './count/Test1'
+import CountTest2 from './count/Test2'
+import CountTest3 from './count/Test3'
+import CountTest4 from './count/Test4'
 import Father from './fatherChild/Father'
 import { message } from './widget/Message'
 import Test1 from './widget/Test1'
@@ -32,7 +36,10 @@ function Home() {
       </TestSlot>
       <TestFor />
       <div className="cursor-pointer" onClick={() => message.success('成功消息')}>消息提示</div> */}
-      <Father />
+      {/* <Father /> */}
+      {/* <CountTest1 /> */}
+      {/* <CountTest3 /> */}
+      <CountTest4 />
     </>
   )
 }

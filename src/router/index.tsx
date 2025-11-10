@@ -9,6 +9,10 @@ const routeConfig = [
     element: Component('view/home'),
   },
   {
+    path: 'rc',
+    element: Component('view/rc'),
+  },
+  {
     element: <Layout />,
     children: [
       { path: 'about', element: Component('view/about') },
@@ -21,6 +25,8 @@ const routeConfig = [
   },
 ]
 
-export default () => {
+function RouteApp() {
   return useRoutes(routeConfig)
 }
+
+export default RouteApp

@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "rc-menu": "^9.16.1",
+    "rc-motion": "^2.9.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router": "^7.9.3",

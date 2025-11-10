@@ -129,3 +129,30 @@ export default Home
 
 ```
 
+### 更新state数组和对象，多层嵌套，不要改变原值，导致渲染出问题，因为react渲染的时候会比较更新后的值和更新前的值，来看是否重新渲染
+
+1. 使用`immer` 和`use-immer`这两个包，来直接直接修改原数据和对象实现更新
+2. 在状态管理`zustand`也可以直接使用`immer`
+3. import { immer } from 'zustand/middleware/immer'
+
+- 使用方式
+
+```jsx
+import { create } from 'zustand'
+import { immer } from 'zustand/middleware/immer'
+
+const useBeeStore = create(
+  immer((set) => ({
+    bees: 0,
+    addBees: (by) =>
+      set((state) => {
+        state.bees += by
+      }),
+  })),
+)
+```
+
+
+### `clsx`这个库是动态改变元素的className的属性
+
+### react组件名称必须大写，不然eslint识别到这个函数不是组件，报红

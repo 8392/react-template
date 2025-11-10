@@ -1,0 +1,23 @@
+/* appear / enter 初始：高度 0 + 透明 */
+@import "tailwindcss";
+
+.accordion-collapse-appear,
+.accordion-collapse-enter {
+  height: 0;
+  opacity: 0;
+}
+.accordion-collapse-appear-active,
+.accordion-collapse-enter-active {
+  height: auto;
+  opacity: 1;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+.accordion-collapse-leave {
+  height: auto;
+  opacity: 1;
+}
+.accordion-collapse-leave-active {
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}

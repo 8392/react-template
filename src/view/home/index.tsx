@@ -5,6 +5,9 @@ import CountTest2 from './count/Test2'
 import CountTest3 from './count/Test3'
 import CountTest4 from './count/Test4'
 import Father from './fatherChild/Father'
+import UseOptimisticA from './useOptimistic/a'
+import UseOptimisticB from './useOptimistic/b'
+import UseTransitionA from './useTransition/a'
 import { message } from './widget/Message'
 import Test1 from './widget/Test1'
 import TestFor from './widget/TestFor'
@@ -39,7 +42,8 @@ function Home() {
       {/* <Father /> */}
       {/* <CountTest1 /> */}
       {/* <CountTest3 /> */}
-      <CountTest4 />
+      {/* <CountTest4 /> */}
+      <UseOptimisticB />
     </>
   )
 }
